@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Carbono</title>
+  </head>
+  <body>
+    <section class="form-container">
+      <div class="form-container__logo">
+        <img src="img/logo.svg" alt="logo img" />
+      </div>
+
+      <header class="form-container__header">
+        <h3 class="form-container__header-main heading-3">Create report</h3>
+      </header>
+
+      <div class="form-container__table main-container__details">
+        <h4 class="main-container__details-heading4 heading-four">
+          Classify transactions
+        </h4>
+
+        <table>
+          <thead class="main-container__details-table">
+            <tr>
+              <th>Name</th>
+              <th class="triangle">Status</th>
+              <th>Date</th>
+              <th>Type</th>
+              <th>Scope</th>
+              <th>Emission</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="main-container__details-table-name bold">
+                WEBJET – AU x922
+              </td>
+              <td class="main-container__details-table-class green-circle">
+                Сlassified
+              </td>
+              <td>Aug 10 at 5:30 pm</td>
+              <td>Flight</td>
+              <td>Scope 1</td>
+              <td><span class="bold">13,038 </span> kg CO2</td>
+              <td class="main-container__details-table-checkmark">...</td>
+            </tr>
+
+            <tr>
+              <td class="main-container__details-table-name bold">
+                WEBJET – AU x923
+              </td>
+              <td class="main-container__details-table-class green-circle">
+                Сlassified
+              </td>
+              <td>Aug 8 at 3:12 pm</td>
+              <td>Flight</td>
+              <td>Scope 1</td>
+              <td><span class="bold">13,156</span> kg CO2</td>
+              <td class="main-container__details-table-checkmark">...</td>
+            </tr>
+
+            <tr>
+              <td class="main-container__details-table-name bold">
+                WEBJET – AU x924
+              </td>
+              <td class="main-container__details-table-class yellow-circle">
+                Automatically classified
+              </td>
+              <td>Aug 6 at 7:18 pm</td>
+              <td>Flight</td>
+              <td>Scope 1</td>
+              <td><span class="bold">13,654 </span> kg CO2</td>
+              <td class="main-container__details-table-checkmark">
+                <svg class="icon">
+                  <use xlink:href="img/sprite.svg#circle-check"></use>
+                </svg>
+                <span>...</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="main-container__details-table-name bold">
+                WEBJET – AU x925
+              </td>
+              <td class="main-container__details-table-class yellow-circle">
+                Automatically classified
+              </td>
+              <td>Aug 4 at 8:21 pm</td>
+              <td>Flight</td>
+              <td>Scope 1</td>
+              <td><span class="bold">12,865 </span> kg CO2</td>
+              <td class="main-container__details-table-checkmark">
+                <svg class="icon">
+                  <use xlink:href="img/sprite.svg#circle-check"></use>
+                </svg>
+                <span> ...</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="main-container__details-table-name--red bold">
+                WEBJET – AU x879
+              </td>
+              <td class="main-container__details-table-class red-circle">
+                Need classification
+              </td>
+              <td>Sep 20 at 5:30 pm</td>
+              <td class="light-grey-text-color">Choose</td>
+              <td class="light-grey-text-color">Choose</td>
+              <td class="light-grey-text-color">0 kg CO2</td>
+              <td class="main-container__details-table-checkmark">...</td>
+            </tr>
+
+            <tr>
+              <td class="main-container__details-table-name--red bold">
+                WEBJET – AU x880
+              </td>
+              <td class="main-container__details-table-class red-circle">
+                Need classification
+              </td>
+              <td>Sep 20 at 5:30 pm</td>
+              <td class="light-grey-text-color">Choose</td>
+              <td class="light-grey-text-color">Choose</td>
+              <td class="light-grey-text-color">0 kg CO2</td>
+              <td class="main-container__details-table-checkmark">...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="form-container__table-mobile main-container__mobile-details">
+        <h4 class="main-container__details-heading4 heading-four">
+          Classify transactions
+        </h4>
+
+        <div class="mobile-table">
+          <div class="mobile-table__item-container">
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold"> Name</span>
+              WEBJET – AU x922
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold green-circle-after"
+                >Status</span
+              >
+              Сlassified
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold">Date</span>
+              Aug 10 at 5:30 pm
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold">Type</span>
+              Flight
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold">Scope</span>
+              Scope 1
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold">Emission</span>
+              13,038 kg CO2
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold"></span>
+              ...
+            </p>
+          </div>
+
+          <div class="mobile-table__item-container">
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold"> Name</span>
+              WEBJET – AU x923
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold green-circle-after"
+                >Status</span
+              >
+              Сlassified
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold">Date</span>
+              Aug 8 at 3:12 pm
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold">Type</span>
+              Flight
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold">Scope</span>
+              Scope 1
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold">Emission</span>
+              13,156 kg CO2
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold"></span>...
+            </p>
+          </div>
+
+          <div class="mobile-table__item-container">
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold"> Name</span>
+              WEBJET – AU x924
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold yellow-circle-after"
+                >Status</span
+              >
+              Automatically
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold">Date</span>
+              Aug 6 at 7:18 pm
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold">Type</span>
+              Flight
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold">Scope</span>
+              Scope 1
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold">Emission</span>
+              13,654 kg CO2
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold"></span>...
+            </p>
+          </div>
+
+          <div class="mobile-table__item-container">
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold"> Name</span>
+              WEBJET – AU x925
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold yellow-circle-after"
+                >Status</span
+              >
+              Automatically
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold">Date</span>
+              Aug 4 at 8:21 pm
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold">Type</span>
+              Flight
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold">Scope</span>
+              Scope 1
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold">Emission</span>
+              12,865 kg CO2
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold">
+                <svg class="icon">
+                  <use xlink:href="img/sprite.svg#circle-check"></use>
+                </svg>
+                <span> ...</span>
+              </span>
+            </p>
+          </div>
+
+          <div class="mobile-table__item-container">
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold"> Name</span>
+              WEBJET – AU x879
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold red-circle-after"
+                >Status</span
+              >
+              Need classification
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold">Date</span>
+              Sep 20 at 5:30 pm
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold">Type</span>
+
+              <span class="light-grey-text-color"> Choose </span>
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold">Scope</span>
+              <span class="light-grey-text-color"> Choose </span>
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold">Emission</span>
+              <span class="light-grey-text-color"> 0 kg CO2 </span>
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold">
+                <svg class="icon">
+                  <use xlink:href="img/sprite.svg#circle-check"></use>
+                </svg>
+                <span> ...</span>
+              </span>
+            </p>
+          </div>
+
+          <div class="mobile-table__item-container">
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold"> Name</span>
+              WEBJET – AU x880
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold red-circle-after"
+                >Status</span
+              >
+              Need classification
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold">Date</span>
+              Sep 20 at 5:30 pm
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold">Type</span>
+
+              <span class="light-grey-text-color"> Choose </span>
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold">Scope</span>
+              <span class="light-grey-text-color"> Choose </span>
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold">Emission</span>
+              <span class="light-grey-text-color"> 0 kg CO2 </span>
+            </p>
+            <p class="mobile-table__item form-container__table-mobile-item">
+              <span class="mobile-table__item--bold"></span>...
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-container__buttons-left">
+        <a class="form-container__buttons-left-link" href="#">
+          <button class="form-container__buttons-left-link--btn">
+            <svg class="form-container__buttons-left-icon">
+              <use xlink:href="img/sprite.svg#logout-left"></use>
+            </svg>
+            Cancel
+          </button>
+        </a>
+      </div>
+
+      <div class="form-container__buttons-right">
+        <button class="btn-with-border">Previous step</button>
+        <p class="form-container__buttons-right-text">
+          2 of 6 transactions needs to be classified
+        </p>
+        <div class="form-container__buttons-right-last-btns">
+          <button class="btn-with-border">Order classification</button>
+          <button class="btn-not-active-light">Continue</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

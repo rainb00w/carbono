@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Carbono</title>
+  </head>
+  <body>
+    <section class="main-container">
+      <div class="main-container__sidebar">
+        <div class="main-container__logo-box">
+          <a href="#"> <img src="img/carbono-logo.svg" alt="Carbono logo" /></a>
+        </div>
+
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+        <label for="navi-toggle" class="navigation__button"
+          ><img class="menu-img" src="img/menu.svg" alt="menu icon"
+        /></label>
+
+        <div class="main-container__sidebar-container">
+          <div class="custom-select">
+            <select class="main-container__sidebar-select">
+              <option value="1">Madappgang</option>
+              <option value="2">Second</option>
+              <option value="3">Third</option>
+            </select>
+            <svg class="main-container__sidebar-icon">
+              <use xlink:href="img/sprite.svg#arrow-down-white"></use>
+            </svg>
+          </div>
+
+          <button class="btn-yellow main-container__sidebar-btn">
+            Create report
+          </button>
+
+          <nav class="navigation__container">
+            <ul
+              class="main-container__sidebar-list--container navigation__list"
+            >
+              <li
+                class="main-container__sidebar-list main-container__sidebar-list--active"
+              >
+                <a>Dashboard </a>
+              </li>
+              <li class="main-container__sidebar-list"><a>Reports </a></li>
+              <li class="main-container__sidebar-list"><a>Transactions </a></li>
+              <li class="main-container__sidebar-list"><a>Settings </a></li>
+              <li class="main-container__sidebar-list"><a>Help </a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="main-container__content">
+        <header>
+          <div class="main-container__dashboard">
+            <h3 class="heading-3">Dashboard</h3>
+            <div class="main-container__dashboard-text">
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#organization"></use>
+              </svg>
+              <p>Organization</p>
+            </div>
+          </div>
+        </header>
+
+        <div class="main-container__company">
+          <p class="main-container__company-crumbs">Company</p>
+          <h1 class="main-container__company-header">Madappgang</h1>
+          <div class="main-container__company-details-container">
+            <p class="main-container__company-details">
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#info-circle"></use>
+              </svg>
+              IT Industry
+            </p>
+
+            <p class="main-container__company-details">
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#map-pin"></use>
+              </svg>
+              Sydney, Australia
+            </p>
+          </div>
+        </div>
+
+        <div class="main-container__data">
+          <h4 class="main-container__data-heading4 heading-four">
+            Emission overview
+          </h4>
+
+          <div class="main-container__data-report-text-container">
+            <div>
+              <p class="main-container__data-report-text red-text">
+                Accuracy 8%
+                <svg class="icon">
+                  <use xlink:href="img/sprite.svg#alert-circle"></use>
+                </svg>
+              </p>
+              <p class="main-container__data-report-bottom-text">
+                2 unknown transactions
+              </p>
+            </div>
+            <button class="btn-black-yellow">Refine report</button>
+          </div>
+
+          <div class="custom-select main-container__data-select-layout">
+            <select class="main-container__data-select">
+              <option value="1">Last month</option>
+              <option value="2">Second</option>
+              <option value="3">Third</option>
+            </select>
+            <svg class="main-container__data-icon">
+              <use xlink:href="img/sprite.svg#arrow-down-transparent"></use>
+            </svg>
+          </div>
+
+          <div class="main-container__emission-chart">
+            <div>
+              <div class="main-container__emission-chart-heading-container">
+                <p class="main-container__emission-chart-heading">
+                  Estimated total emissions
+                </p>
+              </div>
+
+              <p class="main-container__emission-chart-text">
+                Emissions estimate is only based on the expenses or activities
+                you provide.
+              </p>
+            </div>
+
+            <div class="main-container__emission-chart-graphic">
+              <h4 class="main-container__emission-chart-graphic-heading">
+                <span>13,038 </span> kg CO2
+              </h4>
+              <div class="color-1" style="height: 27px"></div>
+              <div class="color-2" style="height: 42px"></div>
+              <div class="color-3" style="height: 68px"></div>
+              <div class="color-4" style="height: 151px"></div>
+            </div>
+          </div>
+
+          <div class="main-container__emission-chart">
+            <div>
+              <div class="main-container__emission-chart-heading-container">
+                <p class="main-container__emission-chart-heading">Scope 1</p>
+                <p class="main-container__emission-chart-heading">9%</p>
+              </div>
+
+              <p class="main-container__emission-chart-text">
+                Direct emissions like fuel, vehicles and chemicals
+              </p>
+            </div>
+
+            <div class="main-container__emission-chart-graphic">
+              <h4 class="main-container__emission-chart-graphic-heading">
+                <span>1,341 </span> kg CO2
+              </h4>
+              <!-- <div class="color-1" style="height: 27px"></div> -->
+              <div class="color-2" style="height: 10px"></div>
+              <!-- <div class="color-3" style="height: 68px"></div> -->
+              <div class="color-4" style="height: 22px"></div>
+            </div>
+          </div>
+
+          <div class="main-container__emission-chart">
+            <div>
+              <div class="main-container__emission-chart-heading-container">
+                <p class="main-container__emission-chart-heading">Scope 2</p>
+                <p class="main-container__emission-chart-heading">23%</p>
+              </div>
+
+              <p class="main-container__emission-chart-text">
+                Indirect emissions from purchase and energy like electricity,
+                steam, heating and cooling
+              </p>
+            </div>
+
+            <div class="main-container__emission-chart-graphic">
+              <h4 class="main-container__emission-chart-graphic-heading">
+                <span>3,346 </span> kg CO2
+              </h4>
+              <div class="color-1" style="height: 8px"></div>
+              <div class="color-2" style="height: 13px"></div>
+              <div class="color-3" style="height: 21px"></div>
+              <div class="color-4" style="height: 46px"></div>
+            </div>
+          </div>
+
+          <div class="main-container__emission-chart">
+            <div>
+              <div class="main-container__emission-chart-heading-container">
+                <p class="main-container__emission-chart-heading">Scope 3</p>
+                <p class="main-container__emission-chart-heading">82%</p>
+              </div>
+
+              <p class="main-container__emission-chart-text">
+                Other indirect emissions eg. transportations, travel, purchased
+                products and services
+              </p>
+            </div>
+
+            <div class="main-container__emission-chart-graphic">
+              <h4 class="main-container__emission-chart-graphic-heading">
+                <span>8,351 </span> kg CO2
+              </h4>
+              <div class="color-1" style="height: 16px"></div>
+              <div class="color-2" style="height: 24px"></div>
+              <div class="color-3" style="height: 40px"></div>
+              <div class="color-4" style="height: 88px"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-container__details">
+          <h4 class="main-container__details-heading4 heading-four">Details</h4>
+          <div class="main-container__details-button-container">
+            <button class="btn-black main-container__details-button">
+              Financial
+              <span class="main-container__details-grey-text">2 </span>
+            </button>
+            <button class="btn-white main-container__details-button">
+              Employees
+              <span class="main-container__details-light-grey-text">14</span>
+            </button>
+          </div>
+
+          <table>
+            <thead class="main-container__details-table">
+              <tr>
+                <th>Name</th>
+                <th class="triangle">Status</th>
+                <th>Date</th>
+                <th>Type</th>
+                <th>Scope</th>
+                <th>Emission</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="main-container__details-table-name bold">
+                  WEBJET – AU x922
+                </td>
+                <td class="main-container__details-table-class green-circle">
+                  Сlassified
+                </td>
+                <td>Aug 10 at 5:30 pm</td>
+                <td>Flight</td>
+                <td>Scope 1</td>
+                <td><span class="bold">13,038 </span> kg CO2</td>
+                <td class="main-container__details-table-checkmark">...</td>
+              </tr>
+
+              <tr>
+                <td class="main-container__details-table-name bold">
+                  WEBJET – AU x923
+                </td>
+                <td class="main-container__details-table-class green-circle">
+                  Сlassified
+                </td>
+                <td>Aug 8 at 3:12 pm</td>
+                <td>Flight</td>
+                <td>Scope 1</td>
+                <td><span class="bold">13,156</span> kg CO2</td>
+                <td class="main-container__details-table-checkmark">...</td>
+              </tr>
+
+              <tr>
+                <td class="main-container__details-table-name bold">
+                  WEBJET – AU x924
+                </td>
+                <td class="main-container__details-table-class yellow-circle">
+                  Automatically classified
+                </td>
+                <td>Aug 6 at 7:18 pm</td>
+                <td>Flight</td>
+                <td>Scope 1</td>
+                <td><span class="bold">13,654 </span> kg CO2</td>
+                <td class="main-container__details-table-checkmark">
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#circle-check"></use>
+                  </svg>
+                  <span>...</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="main-container__details-table-name bold">
+                  WEBJET – AU x925
+                </td>
+                <td class="main-container__details-table-class yellow-circle">
+                  Automatically classified
+                </td>
+                <td>Aug 4 at 8:21 pm</td>
+                <td>Flight</td>
+                <td>Scope 1</td>
+                <td><span class="bold">12,865 </span> kg CO2</td>
+                <td class="main-container__details-table-checkmark">
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#circle-check"></use>
+                  </svg>
+                  <span>...</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="main-container__details-table-name--red bold">
+                  WEBJET – AU x879
+                </td>
+                <td class="main-container__details-table-class red-circle">
+                  Need classification
+                </td>
+                <td>Sep 20 at 5:30 pm</td>
+                <td class="light-grey-text-color">Choose</td>
+                <td class="light-grey-text-color">Choose</td>
+                <td class="light-grey-text-color">0 kg CO2</td>
+                <td class="main-container__details-table-checkmark">...</td>
+              </tr>
+
+              <tr>
+                <td class="main-container__details-table-name--red bold">
+                  WEBJET – AU x880
+                </td>
+                <td class="main-container__details-table-class red-circle">
+                  Need classification
+                </td>
+                <td>Sep 20 at 5:30 pm</td>
+                <td class="light-grey-text-color">Choose</td>
+                <td class="light-grey-text-color">Choose</td>
+                <td class="light-grey-text-color">0 kg CO2</td>
+                <td class="main-container__details-table-checkmark">...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="main-container__mobile-details">
+          <h4 class="main-container__details-heading4 heading-four">Details</h4>
+          <div class="main-container__details-button-container">
+            <button class="btn-black main-container__details-button">
+              Financial
+              <span class="main-container__details-grey-text">2 </span>
+            </button>
+            <button class="btn-white main-container__details-button">
+              Employees
+              <span class="main-container__details-light-grey-text">14</span>
+            </button>
+          </div>
+          <div class="mobile-table">
+            <div class="mobile-table__item-container">
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold"> Name</span>
+                WEBJET – AU x922
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold green-circle-after"
+                  >Status</span
+                >
+                Сlassified
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold">Date</span>
+                Aug 10 at 5:30 pm
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold">Type</span>
+                Flight
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold">Scope</span>
+                Scope 1
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold">Emission</span>
+                13,038 kg CO2
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold"></span>
+                ...
+              </p>
+            </div>
+
+            <div class="mobile-table__item-container">
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold"> Name</span>
+                WEBJET – AU x923
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold green-circle-after"
+                  >Status</span
+                >
+                Сlassified
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold">Date</span>
+                Aug 8 at 3:12 pm
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold">Type</span>
+                Flight
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold">Scope</span>
+                Scope 1
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold">Emission</span>
+                13,156 kg CO2
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold"></span>...
+              </p>
+            </div>
+
+            <div class="mobile-table__item-container">
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold"> Name</span>
+                WEBJET – AU x924
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold yellow-circle-after"
+                  >Status</span
+                >
+                Automatically
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold">Date</span>
+                Aug 6 at 7:18 pm
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold">Type</span>
+                Flight
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold">Scope</span>
+                Scope 1
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold">Emission</span>
+                13,654 kg CO2
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold"></span>...
+              </p>
+            </div>
+
+            <div class="mobile-table__item-container">
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold"> Name</span>
+                WEBJET – AU x925
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold yellow-circle-after"
+                  >Status</span
+                >
+                Automatically
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold">Date</span>
+                Aug 4 at 8:21 pm
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold">Type</span>
+                Flight
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold">Scope</span>
+                Scope 1
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold">Emission</span>
+                12,865 kg CO2
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold">
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#circle-check"></use>
+                  </svg>
+                  <span> ...</span>
+                </span>
+              </p>
+            </div>
+
+            <div class="mobile-table__item-container">
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold"> Name</span>
+                WEBJET – AU x879
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold red-circle-after"
+                  >Status</span
+                >
+                Need classification
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold">Date</span>
+                Sep 20 at 5:30 pm
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold">Type</span>
+
+                <span class="light-grey-text-color"> Choose </span>
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold">Scope</span>
+                <span class="light-grey-text-color"> Choose </span>
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold">Emission</span>
+                <span class="light-grey-text-color"> 0 kg CO2 </span>
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold">
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#circle-check"></use>
+                  </svg>
+                  <span> ...</span>
+                </span>
+              </p>
+            </div>
+
+            <div class="mobile-table__item-container">
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold"> Name</span>
+                WEBJET – AU x880
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold red-circle-after"
+                  >Status</span
+                >
+                Need classification
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold">Date</span>
+                Sep 20 at 5:30 pm
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold">Type</span>
+
+                <span class="light-grey-text-color"> Choose </span>
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold">Scope</span>
+                <span class="light-grey-text-color"> Choose </span>
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold">Emission</span>
+                <span class="light-grey-text-color"> 0 kg CO2 </span>
+              </p>
+              <p class="mobile-table__item">
+                <span class="mobile-table__item--bold"></span>...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,402 @@
+.sign-up {
+  margin: 0 2em;
+  padding: 2.6rem 2.6rem;
+  max-width: 560px;
+  // position: relative;
+
+  display: grid;
+  row-gap: 3.2rem;
+
+  background-color: $White;
+
+  box-shadow: 0px 5px 20px rgba(92, 103, 114, 0.1);
+  border-radius: 4px;
+
+  @media only screen and (min-width: 23.75em) {
+    padding: 2.6rem 6rem;
+  }
+
+  @media only screen and (min-width: 36em) {
+    margin: 0;
+    padding: 5.6rem 8rem;
+
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.4rem;
+  }
+
+  &__heading {
+    // padding: 0 0 3.2rem 0;
+
+    @media only screen and (min-width: 36em) {
+      grid-column: 1 / span 2;
+    }
+
+    display: grid;
+
+    color: $Charcoal;
+  }
+  &__heading-main {
+    @media only screen and (min-width: 36em) {
+      grid-column: 1 / span 2;
+    }
+
+    weight: 700;
+    font-size: 28px;
+    font-style: normal;
+    line-height: 1.29;
+  }
+  &__heading-sub {
+    padding: 0.8rem 0 0 0;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+
+    @media only screen and (min-width: 36em) {
+      grid-column: 1 / span 2;
+    }
+  }
+
+  &__terms-field {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.2rem;
+
+    @media only screen and (min-width: 36em) {
+      grid-column: 1 / span 2;
+    }
+  }
+
+  &__terms-label {
+    // margin: 0 0 0 0.8rem;
+
+    display: grid;
+    grid-template-columns: min-content auto auto;
+    // column-gap: 0.5em;
+    align-items: start;
+    justify-content: start;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+
+    color: $Charcoal;
+
+    &--underline {
+      padding: 0 0 0.1rem 0;
+      border-bottom: 1px solid $Charcoal;
+    }
+  }
+
+  &__with {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 1.2rem;
+    align-items: center;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+
+    color: $Charcoal;
+
+    &::before,
+    &::after {
+      content: "";
+      height: 1px;
+      display: block;
+      background-color: #d8d9de;
+    }
+  }
+
+  &__login-btn {
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+
+    text-align: left;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.43;
+
+    color: $Charcoal;
+
+    &--text:hover {
+      padding: 0 0 0.2rem 0;
+      border-bottom: 1px solid $Charcoal;
+    }
+  }
+
+  &__with-block {
+    margin: 0 2em;
+    padding: 2.4rem 8rem 5.6rem 8rem;
+    max-width: 560px;
+
+    background-color: $White;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.2rem;
+
+    @media only screen and (min-width: 36em) {
+      margin: 0;
+      padding: 0 3rem 4.6rem 3rem;
+    }
+  }
+
+  &__with-btns {
+    display: grid;
+
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 1rem;
+    row-gap: 1rem;
+
+    @media only screen and (min-width: 36em) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    button {
+      text-align: center;
+      padding: 0.8rem 1.6rem;
+
+      border: 1px solid $Charcoal;
+      border-radius: 4px;
+      background-color: transparent;
+
+      cursor: pointer;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.43;
+      color: $Charcoal;
+
+      transition: all 0.3s;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__checkbox-icon {
+    margin: 0 8px 0 0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+
+    border: 1px solid #d8d9de;
+    border-radius: 2px;
+  }
+
+  &__checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+    transition: all 0.3s;
+
+    &:checked + &-icon {
+      background-image: url(../img/icons/checkbox.svg);
+      background-size: contain;
+    }
+  }
+}
+
+.welcome-screen {
+  margin: 0 2rem;
+  padding: 2rem 2rem;
+  max-width: 590px;
+
+  background-color: $White;
+
+  box-shadow: 0px 5px 20px rgba(92, 103, 114, 0.1);
+  border-radius: 4px;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 3.2rem;
+
+  @media only screen and (min-width: 23.75em) {
+    padding: 2.8rem 4.8rem;
+  }
+
+  @media only screen and (min-width: 36em) {
+    margin: 0 1rem;
+    padding: 5.6rem 8rem;
+  }
+
+  &__main-text {
+    margin: 0.8rem 0 0 0;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+    color: $Charcoal;
+  }
+
+  &__steps &__main-text {
+    margin: 0.4rem 0 0 1.4rem;
+  }
+  &__step {
+    margin: 1.2rem 0 0 0;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.43;
+    color: $Charcoal;
+  }
+  &__subsription {
+    padding: 1.6rem 1.6rem;
+
+    background: $BackgroundReport;
+    border: 1px solid #d8d9de;
+    border-radius: 4px;
+    p {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 1.38;
+    }
+  }
+
+  &__ {
+  }
+}
+
+.oranization-details {
+  margin: 0 2rem;
+  padding: 2.6rem 4.6rem;
+  max-width: 560px;
+  // position: relative;
+
+  background-color: $White;
+
+  box-shadow: 0px 5px 20px rgba(92, 103, 114, 0.1);
+  border-radius: 4px;
+
+  @media only screen and (min-width: 23.75em) {
+    padding: 2.6rem 6.4rem;
+  }
+
+  @media only screen and (min-width: 36em) {
+    margin: 0 0;
+    padding: 5.6rem 8rem;
+  }
+
+  &__form {
+    display: grid;
+
+    row-gap: 3.2rem;
+
+    @media only screen and (min-width: 23.75em) {
+    }
+
+    @media only screen and (min-width: 36em) {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 2.4rem;
+    }
+  }
+
+  &__button-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    column-gap: 2.4rem;
+    row-gap: 2rem;
+
+    @media only screen and (min-width: 36em) {
+      flex-direction: row;
+    }
+  }
+}
+
+.email-confirmation {
+  margin: 0 2rem;
+  max-width: 600px;
+
+  background-color: $White;
+
+  box-shadow: 0px 5px 20px rgba(92, 103, 114, 0.1);
+  border-radius: 4px;
+
+  @media only screen and (min-width: 23.75em) {
+  }
+
+  @media only screen and (min-width: 38em) {
+  }
+
+  h4,
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__top-text.main-text {
+    margin: 0.8rem 0 1.8rem 0;
+  }
+
+  &__header {
+    width: 100%;
+
+    padding: 4rem 4.8rem 4rem 4.8rem;
+    display: flex;
+    align-items: center;
+    background-color: $Charcoal;
+  }
+  &__body {
+    padding: 4.8rem 2rem 3.2rem 2rem;
+
+    @media only screen and (min-width: 23.75em) {
+      padding: 4.8rem 3.2rem 3.2rem 3.2rem;
+    }
+
+    @media only screen and (min-width: 38em) {
+      padding: 4.8rem 4.8rem 3.2rem 4.8rem;
+    }
+  }
+
+  &__footer-btn {
+    padding: 4.4rem 0;
+    text-align: center;
+  }
+
+  &__bottom-text.main-text {
+    padding: 2.4rem 0 0 0;
+  }
+
+  &__footer-text.main-text {
+    margin: 1rem 0 0 0;
+    padding: 2.2rem 0 0 0;
+
+    font-size: 13px;
+
+    // border-top: 4px solid #d8d9de;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    @media only screen and (min-width: 38em) {
+      margin: 5.6rem 0 0 0;
+    }
+  }
+
+  &__bottom-line {
+    margin: 0 0 3.2rem 0;
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #d8d9de;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}

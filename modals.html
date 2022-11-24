@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Carbono</title>
+  </head>
+  <body>
+    <section class="container">
+      <form class="sign-up" name="sign-up">
+        <div class="sign-up__heading">
+          <h3 class="sign-up__heading-main">Sign up</h3>
+          <label class="sign-up__heading-sub">Start a 30 day FREE trial.</label>
+        </div>
+
+        <div>
+          <label class="label-name" for="first-name">First Name</label>
+          <input
+            class="label-field"
+            id="first-name"
+            type="text"
+            placeholder="John"
+            name="first-name"
+            required
+          />
+        </div>
+
+        <div>
+          <label class="label-name" for="last-name">Last Name</label>
+          <input
+            class="label-field"
+            id="last-name"
+            type="text"
+            placeholder="Doe"
+            name="last-name"
+            required
+          />
+        </div>
+
+        <div>
+          <label class="label-name" for="email">Email address</label>
+          <input
+            class="label-field"
+            id="email"
+            type="email"
+            placeholder="john.doe@gmail.com"
+            name="email"
+            required
+          />
+        </div>
+
+        <div>
+          <label class="label-name" for="phone">Phone</label>
+          <input
+            class="label-field"
+            type="tel"
+            id="phone"
+            placeholder="+1 | 702 123 4567"
+          />
+        </div>
+
+        <div>
+          <label class="label-name" for="password">Pasword</label>
+          <input
+            class="label-field"
+            id="password"
+            type="password"
+            placeholder="**********"
+          />
+        </div>
+
+        <div>
+          <label class="label-name" for="repeat-password"
+            >Repeat password</label
+          >
+          <input
+            class="label-field"
+            id="repeat-password"
+            type="password"
+            placeholder="**********"
+          />
+        </div>
+        <div class="sign-up__terms-field">
+          <div>
+            <label class="sign-up__terms-label">
+              <input class="sign-up__checkbox" type="checkbox" name="terms" />
+              <span class="sign-up__checkbox-icon"></span>
+              <span>
+                I've read and agreed to the
+                <span class="sign-up__terms-label--underline">
+                  terms of use </span
+                >,
+                <span class="sign-up__terms-label--underline"
+                  >privacy policy</span
+                >
+                and
+                <span class="sign-up__terms-label--underline"
+                  >offer details</span
+                >.
+              </span>
+            </label>
+          </div>
+
+          <div>
+            <label class="sign-up__terms-label">
+              <input
+                class="sign-up__checkbox"
+                type="checkbox"
+                name="not-a-robot"
+              />
+              <span class="sign-up__checkbox-icon"></span>
+              <span> I’m not a robot </span>
+            </label>
+          </div>
+        </div>
+
+        <button class="btn-yellow justify-self-center">Sign up</button>
+
+        <button class="sign-up__login-btn justify-self-center">
+          <span class="sign-up__login-btn--text">Go to Log in</span>
+        </button>
+      </form>
+
+      <div class="sign-up__with-block">
+        <p class="sign-up__with">Sign up with</p>
+        <div class="sign-up__with-btns">
+          <button>Xero</button>
+          <button>Google</button>
+          <button>Office365</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="welcome-screen">
+        <h3 class="heading-3">Welcome to Carbono</h3>
+
+        <div>
+          <p class="heading-4">Hi John Doe</p>
+          <p class="main-text">
+            Confirm your email and start using CarbonO to simplify your carbon
+            impact and close the loop to reduce or offset your carbon impact.
+          </p>
+        </div>
+
+        <div class="welcome-screen__subsription">
+          <h4 class="heading-4">Subscription</h4>
+          <p class="main-text">
+            You’ ll start with a trial period, which will be valid for 30 days.
+            At the end of this period, we’ll offer you to purchase a
+            subscription.
+          </p>
+        </div>
+
+        <div class="welcome-screen__steps">
+          <p class="heading-4">Next steps</p>
+          <p class="welcome-screen__step">1. Verify your account</p>
+          <p class="main-text">
+            Click on the link in your email and verify your account
+          </p>
+          <p class="welcome-screen__step">2. Start using CarbonO</p>
+          <p class="main-text">Log into CarbonO and start exploring the site</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="oranization-details">
+        <form class="oranization-details__form" name="oranization-details">
+          <div class="span-2-cols">
+            <h3 class="heading-3">Add Organisation details</h3>
+          </div>
+
+          <div class="select-container">
+            <label class="label-name" for="account-type">Type of account</label>
+            <div class="custom-select">
+              <select class="select-element">
+                <option value="">Entity</option>
+                <option value="">Second</option>
+                <option value="">Third</option>
+              </select>
+              <svg class="select-icon">
+                <use xlink:href="img/sprite.svg#arrow-down"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div>
+            <label class="label-name" for="ABN">ABN</label>
+            <input
+              class="label-field"
+              id="ABN"
+              type="text"
+              placeholder="51 824 753 556"
+              name="ABN"
+              required
+            />
+          </div>
+
+          <div>
+            <label class="label-name" for="Organisation">Organisation</label>
+            <input
+              class="label-field"
+              id="Organisation"
+              type="text"
+              placeholder="MAG Group"
+              name="Organisation"
+              required
+            />
+          </div>
+
+          <div>
+            <label class="label-name" for="Company name">Company name</label>
+            <input
+              class="label-field"
+              id="Company name"
+              type="text"
+              placeholder="Madappgang"
+              name="Company name"
+              required
+            />
+          </div>
+
+          <div class="select-container">
+            <label class="label-name" for="Industry">Industry</label>
+
+            <div class="custom-select">
+              <select class="select-element">
+                <option value="">IT industry</option>
+                <option value="">Second</option>
+                <option value="">Third</option>
+              </select>
+              <svg class="select-icon">
+                <use xlink:href="img/sprite.svg#arrow-down"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="span-2-cols oranization-details__button-container">
+            <button class="btn-yellow">Start a trial period</button>
+
+            <span class="">Trial period is 30 days</span>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

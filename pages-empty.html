@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Carbono</title>
+  </head>
+  <body>
+    <section class="main-container">
+      <div class="main-container__sidebar">
+        <div class="main-container__logo-box">
+          <a href="#"> <img src="img/carbono-logo.svg" alt="Carbono logo" /></a>
+        </div>
+
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+        <label for="navi-toggle" class="navigation__button"
+          ><img class="menu-img" src="img/menu.svg" alt="menu icon"
+        /></label>
+
+        <div class="main-container__sidebar-container">
+          <div class="custom-select">
+            <select class="main-container__sidebar-select">
+              <option value="1">Madappgang</option>
+              <option value="2">Second</option>
+              <option value="3">Third</option>
+            </select>
+            <svg class="main-container__sidebar-icon">
+              <use xlink:href="img/sprite.svg#arrow-down-white"></use>
+            </svg>
+          </div>
+
+          <button class="btn-yellow main-container__sidebar-btn btn-not-active">
+            Create report
+          </button>
+
+          <nav class="navigation__container">
+            <ul
+              class="main-container__sidebar-list--container navigation__list"
+            >
+              <li
+                class="main-container__sidebar-list main-container__sidebar-list--active"
+              >
+                <a>Dashboard </a>
+              </li>
+              <li class="main-container__sidebar-list"><a>Reports </a></li>
+              <li class="main-container__sidebar-list"><a>Transactions </a></li>
+              <li class="main-container__sidebar-list"><a>Settings </a></li>
+              <li class="main-container__sidebar-list"><a>Help </a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="main-container__content specific">
+        <header>
+          <div class="main-container__dashboard">
+            <h3 class="heading-3">Dashboard</h3>
+            <div class="main-container__dashboard-text">
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#organization"></use>
+              </svg>
+              <p>Organization</p>
+            </div>
+          </div>
+        </header>
+
+        <div class="main-container__company">
+          <p class="main-container__company-crumbs">Company</p>
+          <h1 class="main-container__company-header">Madappgang</h1>
+          <div class="main-container__company-details-container">
+            <p class="main-container__company-details">
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#info-circle"></use>
+              </svg>
+              IT Industry
+            </p>
+
+            <p class="main-container__company-details">
+              <svg class="icon">
+                <use xlink:href="img/sprite.svg#map-pin"></use>
+              </svg>
+              Sydney, Australia
+            </p>
+          </div>
+        </div>
+
+        <div class="xero-connection">
+          <div class="xero-connection__logo-container">
+            <img src="img/xero.svg" alt="Xero logo" />
+          </div>
+          <h4 class="xero-connection__header heading-four">Connect to Xero</h4>
+          <p class="xero-connection__text">
+            To import your transactions and employee data.This will allow you to
+            generate reports
+          </p>
+          <button class="xero-connection__button btn-yellow">
+            Connect to Xero
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
