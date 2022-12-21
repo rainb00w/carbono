@@ -62,3 +62,24 @@ a:hover,
 a:active {
   cursor: pointer;
 }
+
+.pages-links {
+  margin: 5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a:link,
+  a:visited {
+    font-family: inherit;
+    text-decoration: none;
+
+    color: $Charcoal;
+  }
+
+  a:hover,
+  a:active {
+    text-decoration: underline;
+  }
+}

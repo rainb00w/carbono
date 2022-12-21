@@ -16,6 +16,139 @@
     <title>Carbono</title>
   </head>
   <body>
+    <div>
+      <section class="container">
+        <form class="sign-up" name="sign-up">
+          <div class="sign-up__heading">
+            <h3 class="sign-up__heading-main">Sign up</h3>
+            <label class="sign-up__heading-sub"
+              >Start a 30 day FREE trial.</label
+            >
+          </div>
+
+          <div>
+            <label class="label-name" for="first-name">First Name</label>
+            <input
+              class="label-field"
+              id="first-name"
+              type="text"
+              placeholder="John"
+              name="first-name"
+              required
+            />
+          </div>
+
+          <div>
+            <label class="label-name" for="last-name">Last Name</label>
+            <input
+              class="label-field"
+              id="last-name"
+              type="text"
+              placeholder="Doe"
+              name="last-name"
+              required
+            />
+          </div>
+
+          <div>
+            <label class="label-name" for="email">Email address</label>
+            <input
+              class="label-field"
+              id="email"
+              type="email"
+              placeholder="john.doe@gmail.com"
+              name="email"
+              required
+            />
+          </div>
+
+          <div>
+            <label class="label-name" for="phone">Phone</label>
+            <input
+              class="label-field"
+              type="tel"
+              id="phone"
+              placeholder="+1 | 702 123 4567"
+            />
+          </div>
+
+          <div>
+            <label class="label-name" for="password">Pasword</label>
+            <input
+              class="label-field"
+              id="password"
+              type="password"
+              placeholder="**********"
+            />
+          </div>
+
+          <div>
+            <label class="label-name" for="repeat-password"
+              >Repeat password</label
+            >
+            <input
+              class="label-field"
+              id="repeat-password"
+              type="password"
+              placeholder="**********"
+            />
+          </div>
+          <div class="sign-up__terms-field">
+            <div>
+              <label class="sign-up__terms-label">
+                <input class="sign-up__checkbox" type="checkbox" name="terms" />
+                <span class="sign-up__checkbox-icon"></span>
+                <span>
+                  I've read and agreed to the
+                  <span class="sign-up__terms-label--underline">
+                    terms of use </span
+                  >,
+                  <span class="sign-up__terms-label--underline"
+                    >privacy policy</span
+                  >
+                  and
+                  <span class="sign-up__terms-label--underline"
+                    >offer details</span
+                  >.
+                </span>
+              </label>
+            </div>
+
+            <div>
+              <label class="sign-up__terms-label">
+                <input
+                  class="sign-up__checkbox"
+                  type="checkbox"
+                  name="not-a-robot"
+                />
+                <span class="sign-up__checkbox-icon"></span>
+                <span> I’m not a robot </span>
+              </label>
+            </div>
+          </div>
+
+          <button class="btn-yellow justify-self-center">Sign up</button>
+
+          <button class="sign-up__login-btn justify-self-center">
+            <span class="sign-up__login-btn--text">Go to Log in</span>
+          </button>
+        </form>
+
+        <div class="sign-up__with-block">
+          <p class="sign-up__with">Sign up with</p>
+          <div class="sign-up__with-btns">
+            <button>Xero</button>
+            <button>Google</button>
+            <button>Office365</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="pages-links">
+      <a href="1.html">Next Screen</a>
+    </div>
+
     <div class="index-page">
       <a href="modals.html">Modals &rarr;</a>
       <a href="other.html">Other &rarr;</a>
